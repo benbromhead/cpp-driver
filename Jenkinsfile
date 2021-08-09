@@ -517,7 +517,8 @@ pipeline {
                 'centos/8-64/cpp',
                 'ubuntu/trusty64/cpp',
                 'ubuntu/xenial64/cpp',
-                'ubuntu/bionic64/cpp'],
+                'ubuntu/bionic64/cpp',
+                'ubuntu/focal64/cpp'],
       description: '''Operating system to use for scheduled or adhoc builds
                       <table style="width:100%">
                         <col width="20%">
@@ -550,6 +551,10 @@ pipeline {
                           <td><strong>ubuntu/bionic64/cpp</strong></td>
                           <td>Ubuntu 18.04 LTS x86_64</td>
                         </tr>
+			<tr>
+			  <td><strong>ubuntu/focal64/cpp</strong></td>
+			  <td>Ubuntu 20.04 LTS x86_64</td>
+			</tr>
                       </table>''')
     string(
       name: 'INTEGRATION_TESTS_FILTER',
@@ -599,7 +604,8 @@ pipeline {
                    'centos/8-64/cpp',
                    'ubuntu/trusty64/cpp',
                    'ubuntu/xenial64/cpp',
-                   'ubuntu/bionic64/cpp'
+                   'ubuntu/bionic64/cpp',
+                   'ubuntu/focal64/cpp'
           }
         }
 
@@ -736,7 +742,8 @@ pipeline {
                    'centos/8-64/cpp',
                    'ubuntu/trusty64/cpp',
                    'ubuntu/xenial64/cpp',
-                   'ubuntu/bionic64/cpp'
+                   'ubuntu/bionic64/cpp',
+                   'ubuntu/focal64/cpp'
           }
         }
 
